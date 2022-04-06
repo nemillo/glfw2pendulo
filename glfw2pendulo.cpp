@@ -80,7 +80,7 @@ void updateAcceleration (Sphere &sphere){
 
 	ph_log_file.open(PH_LOG_FILE,std::ios::app);
 	ph_log_file <<"Position: " << sphere.getPosition().x << "  " << sphere.getPosition().y << "  " << sphere.getPosition().z << "  "
-				<< "r: " << r.x << "  " << r.y << "  " << r.z << "   "
+				<< "r: " << r.x << "  " << r.y << "  " << r.z << "   " << "L: " << glm::length(r) << "   "
 				<< "T: " << T << "   "
 	            << "Velocity: " << sphere.getVelocity().x << "  " << sphere.getVelocity().y << "  " << sphere.getVelocity().z << "   "
 				<< "Acceleration: " << sphere.getAcceleration().x << "  " << sphere.getAcceleration().y << "  " << sphere.getAcceleration().z << "  "
